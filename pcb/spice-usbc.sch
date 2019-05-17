@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.2">
+<eagle version="9.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -2602,6 +2602,10 @@ Source: http://www.bourns.com/data/global/PDFs/MFMSMF.pdf</description>
 <part name="D5" library="Circuit Protection &gt; ESD Suppressors \ TVS Diodes" deviceset="PESD5V0S1BAF" device=""/>
 <part name="F1" library="Circuit Protection &gt; Resettable Fuses - PPTC" deviceset="PTC" device="1210"/>
 <part name="J1" library="Connectors &gt; USB" deviceset="USB-C" device=""/>
+<part name="R8" library="Passive Components &gt; Resistors &gt; Chip Resistors" deviceset="RESISTOR" device="0603" value="5k1"/>
+<part name="R9" library="Passive Components &gt; Resistors &gt; Chip Resistors" deviceset="RESISTOR" device="0603" value="5k1"/>
+<part name="GND31" library="Utility &gt; Power Symbols" deviceset="GND" device=""/>
+<part name="GND32" library="Utility &gt; Power Symbols" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2616,9 +2620,9 @@ Source: http://www.bourns.com/data/global/PDFs/MFMSMF.pdf</description>
 <wire x1="73.66" y1="139.7" x2="10.16" y2="139.7" width="0.1524" layer="97"/>
 <wire x1="10.16" y1="139.7" x2="10.16" y2="187.96" width="0.1524" layer="97"/>
 <wire x1="10.16" y1="134.62" x2="73.66" y2="134.62" width="0.1524" layer="97"/>
-<wire x1="73.66" y1="134.62" x2="73.66" y2="76.2" width="0.1524" layer="97"/>
-<wire x1="73.66" y1="76.2" x2="10.16" y2="76.2" width="0.1524" layer="97"/>
-<wire x1="10.16" y1="76.2" x2="10.16" y2="134.62" width="0.1524" layer="97"/>
+<wire x1="73.66" y1="134.62" x2="73.66" y2="53.34" width="0.1524" layer="97"/>
+<wire x1="73.66" y1="53.34" x2="10.16" y2="53.34" width="0.1524" layer="97"/>
+<wire x1="10.16" y1="53.34" x2="10.16" y2="134.62" width="0.1524" layer="97"/>
 <wire x1="172.72" y1="198.12" x2="284.48" y2="198.12" width="0.1524" layer="97"/>
 <wire x1="284.48" y1="198.12" x2="284.48" y2="63.5" width="0.1524" layer="97"/>
 <wire x1="284.48" y1="63.5" x2="172.72" y2="63.5" width="0.1524" layer="97"/>
@@ -2860,9 +2864,9 @@ Source: http://www.bourns.com/data/global/PDFs/MFMSMF.pdf</description>
 <attribute name="NAME" x="64.516" y="161.798" size="1.27" layer="95" rot="R90"/>
 <attribute name="VALUE" x="68.58" y="161.544" size="1.27" layer="96" rot="R90"/>
 </instance>
-<instance part="D1" gate="G$1" x="50.8" y="99.06" smashed="yes">
-<attribute name="NAME" x="53.34" y="96.52" size="1.778" layer="95"/>
-<attribute name="VALUE" x="53.34" y="93.98" size="1.778" layer="95"/>
+<instance part="D1" gate="G$1" x="55.88" y="99.06" smashed="yes">
+<attribute name="NAME" x="57.15" y="96.52" size="1.778" layer="95"/>
+<attribute name="VALUE" x="57.15" y="93.98" size="1.778" layer="95"/>
 </instance>
 <instance part="C4" gate="G$1" x="91.44" y="139.7" smashed="yes">
 <attribute name="NAME" x="89.916" y="137.16" size="1.27" layer="95" rot="R90"/>
@@ -2904,8 +2908,8 @@ Source: http://www.bourns.com/data/global/PDFs/MFMSMF.pdf</description>
 <instance part="SUPPLY7" gate="G$1" x="104.14" y="162.56" smashed="yes">
 <attribute name="VALUE" x="104.14" y="165.354" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="SUPPLY3" gate="G$1" x="55.88" y="119.38" smashed="yes">
-<attribute name="VALUE" x="55.88" y="122.174" size="1.778" layer="96" align="bottom-center"/>
+<instance part="SUPPLY3" gate="G$1" x="60.96" y="119.38" smashed="yes">
+<attribute name="VALUE" x="60.96" y="122.174" size="1.778" layer="96" align="bottom-center"/>
 </instance>
 <instance part="GND10" gate="1" x="104.14" y="116.84" smashed="yes">
 <attribute name="VALUE" x="104.14" y="116.586" size="1.778" layer="96" align="top-center"/>
@@ -2943,11 +2947,11 @@ Source: http://www.bourns.com/data/global/PDFs/MFMSMF.pdf</description>
 <instance part="SUPPLY1" gate="G$1" x="17.78" y="165.1" smashed="yes">
 <attribute name="VALUE" x="17.78" y="167.894" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="GND2" gate="1" x="40.64" y="83.82" smashed="yes">
-<attribute name="VALUE" x="40.64" y="83.566" size="1.778" layer="96" align="top-center"/>
+<instance part="GND2" gate="1" x="33.02" y="76.2" smashed="yes">
+<attribute name="VALUE" x="33.02" y="75.946" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="GND4" gate="1" x="50.8" y="88.9" smashed="yes">
-<attribute name="VALUE" x="50.8" y="88.646" size="1.778" layer="96" align="top-center"/>
+<instance part="GND4" gate="1" x="55.88" y="88.9" smashed="yes">
+<attribute name="VALUE" x="55.88" y="88.646" size="1.778" layer="96" align="top-center"/>
 </instance>
 <instance part="U9" gate=".1" x="200.66" y="119.38" smashed="yes">
 <attribute name="NAME" x="193.04" y="124.46" size="1.778" layer="95" align="top-left"/>
@@ -3091,13 +3095,27 @@ Source: http://www.bourns.com/data/global/PDFs/MFMSMF.pdf</description>
 <instance part="D5" gate="G$1" x="297.18" y="157.988" smashed="yes">
 <attribute name="VALUE" x="300.609" y="148.59" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="F1" gate="G$2" x="48.26" y="116.84" smashed="yes">
-<attribute name="NAME" x="44.45" y="120.65" size="1.27" layer="95"/>
-<attribute name="VALUE" x="44.45" y="113.03" size="1.27" layer="96"/>
+<instance part="F1" gate="G$2" x="53.34" y="116.84" smashed="yes">
+<attribute name="NAME" x="49.53" y="120.65" size="1.27" layer="95"/>
+<attribute name="VALUE" x="49.53" y="113.03" size="1.27" layer="96"/>
 </instance>
 <instance part="J1" gate="G$1" x="27.94" y="86.36" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="27.94" y="83.82" size="1.778" layer="96" rot="MR0"/>
 <attribute name="NAME" x="27.94" y="121.92" size="1.778" layer="95" rot="MR0" align="top-left"/>
+</instance>
+<instance part="R8" gate="G$1" x="38.1" y="86.36" smashed="yes" rot="R90">
+<attribute name="NAME" x="36.576" y="83.058" size="1.27" layer="95" rot="R90"/>
+<attribute name="VALUE" x="40.64" y="82.804" size="1.27" layer="96" rot="R90"/>
+</instance>
+<instance part="R9" gate="G$1" x="48.26" y="86.36" smashed="yes" rot="R90">
+<attribute name="NAME" x="46.736" y="83.058" size="1.27" layer="95" rot="R90"/>
+<attribute name="VALUE" x="50.8" y="82.804" size="1.27" layer="96" rot="R90"/>
+</instance>
+<instance part="GND31" gate="1" x="38.1" y="76.2" smashed="yes">
+<attribute name="VALUE" x="38.1" y="75.946" size="1.778" layer="96" align="top-center"/>
+</instance>
+<instance part="GND32" gate="1" x="48.26" y="76.2" smashed="yes">
+<attribute name="VALUE" x="48.26" y="75.946" size="1.778" layer="96" align="top-center"/>
 </instance>
 </instances>
 <busses>
@@ -3376,12 +3394,12 @@ Source: http://www.bourns.com/data/global/PDFs/MFMSMF.pdf</description>
 </segment>
 <segment>
 <pinref part="D1" gate="G$1" pin="2"/>
-<wire x1="45.72" y1="109.22" x2="45.72" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="109.22" x2="60.96" y2="109.22" width="0.1524" layer="91"/>
-<junction x="45.72" y="109.22"/>
-<label x="60.96" y="109.22" size="0.889" layer="95" xref="yes"/>
+<wire x1="50.8" y1="109.22" x2="50.8" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="109.22" x2="66.04" y2="109.22" width="0.1524" layer="91"/>
+<junction x="50.8" y="109.22"/>
+<label x="66.04" y="109.22" size="0.889" layer="95" xref="yes"/>
 <pinref part="J1" gate="G$1" pin="DN@A7,B7"/>
-<wire x1="45.72" y1="109.22" x2="30.48" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="109.22" x2="30.48" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="DP" class="0">
@@ -3392,12 +3410,12 @@ Source: http://www.bourns.com/data/global/PDFs/MFMSMF.pdf</description>
 </segment>
 <segment>
 <pinref part="D1" gate="G$1" pin="3"/>
-<wire x1="50.8" y1="111.76" x2="50.8" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="111.76" x2="58.42" y2="111.76" width="0.1524" layer="91"/>
-<junction x="50.8" y="111.76"/>
-<label x="58.42" y="111.76" size="0.889" layer="95" xref="yes"/>
+<wire x1="55.88" y1="111.76" x2="55.88" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="111.76" x2="63.5" y2="111.76" width="0.1524" layer="91"/>
+<junction x="55.88" y="111.76"/>
+<label x="63.5" y="111.76" size="0.889" layer="95" xref="yes"/>
 <pinref part="J1" gate="G$1" pin="DP@A6,B6"/>
-<wire x1="50.8" y1="111.76" x2="30.48" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="111.76" x2="30.48" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="5V" class="0">
@@ -3419,11 +3437,11 @@ Source: http://www.bourns.com/data/global/PDFs/MFMSMF.pdf</description>
 <segment>
 <pinref part="SUPPLY3" gate="G$1" pin="5V"/>
 <pinref part="D1" gate="G$1" pin="4"/>
-<wire x1="55.88" y1="119.38" x2="55.88" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="119.38" x2="60.96" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="F1" gate="G$2" pin="1"/>
-<wire x1="55.88" y1="116.84" x2="55.88" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="116.84" x2="55.88" y2="116.84" width="0.1524" layer="91"/>
-<junction x="55.88" y="116.84"/>
+<wire x1="60.96" y1="116.84" x2="60.96" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="116.84" x2="60.96" y2="116.84" width="0.1524" layer="91"/>
+<junction x="60.96" y="116.84"/>
 </segment>
 <segment>
 <pinref part="J2" gate=".2" pin="S"/>
@@ -3488,14 +3506,14 @@ Source: http://www.bourns.com/data/global/PDFs/MFMSMF.pdf</description>
 <pinref part="GND6" gate="1" pin="GND"/>
 </segment>
 <segment>
-<wire x1="30.48" y1="88.9" x2="40.64" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="88.9" x2="40.64" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="88.9" x2="33.02" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="88.9" x2="33.02" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="GND2" gate="1" pin="GND"/>
 <pinref part="J1" gate="G$1" pin="GND@A12,A1,B1,B12"/>
 </segment>
 <segment>
 <pinref part="D1" gate="G$1" pin="1"/>
-<wire x1="50.8" y1="96.52" x2="50.8" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="96.52" x2="55.88" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="GND4" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -3599,6 +3617,16 @@ Source: http://www.bourns.com/data/global/PDFs/MFMSMF.pdf</description>
 <pinref part="GND29" gate="1" pin="GND"/>
 <wire x1="297.18" y1="152.908" x2="297.18" y2="150.368" width="0.1524" layer="91"/>
 <pinref part="D5" gate="G$1" pin="P$2"/>
+</segment>
+<segment>
+<pinref part="GND32" gate="1" pin="GND"/>
+<pinref part="R9" gate="G$1" pin="P$1"/>
+<wire x1="48.26" y1="78.74" x2="48.26" y2="81.28" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND31" gate="1" pin="GND"/>
+<pinref part="R8" gate="G$1" pin="P$1"/>
+<wire x1="38.1" y1="78.74" x2="38.1" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -3981,7 +4009,23 @@ Source: http://www.bourns.com/data/global/PDFs/MFMSMF.pdf</description>
 <segment>
 <pinref part="F1" gate="G$2" pin="2"/>
 <pinref part="J1" gate="G$1" pin="VBUS@B9,B4,A4,A9"/>
-<wire x1="43.18" y1="116.84" x2="30.48" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="116.84" x2="30.48" y2="116.84" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$15" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="CC2@B5"/>
+<pinref part="R8" gate="G$1" pin="P$2"/>
+<wire x1="30.48" y1="93.98" x2="38.1" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="93.98" x2="38.1" y2="91.44" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$26" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="CC1@A5"/>
+<pinref part="R9" gate="G$1" pin="P$2"/>
+<wire x1="30.48" y1="96.52" x2="48.26" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="96.52" x2="48.26" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
